@@ -21,7 +21,7 @@ class HomeView(TemplateView):
         context['offerditails']=Offer_Ditails.objects.all()
         context['portfolio']=Portfolio_Section.objects.all()
         context['videos'] = Video.objects.all()
-        context['website']=Websitesettings.objects.first()
+        context['website'] = Websitesettings.objects.first()
         return context
 
 
